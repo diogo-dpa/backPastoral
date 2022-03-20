@@ -12,12 +12,125 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "nome": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "birthDate": {
+    "dataNascimento": {
       "type": "date"
+    },
+    "cpf": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "rg": {
+      "type": "biginteger"
+    },
+    "nomeMae": {
+      "type": "string"
+    },
+    "situacaoCivil": {
+      "type": "enumeration",
+      "enum": [
+        "Solteiro",
+        "Casado",
+        "Viúvo",
+        "Divorciado",
+        "União Estável"
+      ]
+    },
+    "genero": {
+      "type": "enumeration",
+      "enum": [
+        "Masculino",
+        "Feminino"
+      ]
+    },
+    "categoriaGenero": {
+      "type": "enumeration",
+      "enum": [
+        "Cisgênero",
+        "Transgênero"
+      ]
+    },
+    "racaCor": {
+      "type": "enumeration",
+      "enum": [
+        "Branca",
+        "Preta",
+        "Parda",
+        "Indígena",
+        "Amarela - Asiática",
+        "Prefiro não declarar"
+      ]
+    },
+    "quantidadeFilhos": {
+      "type": "integer"
+    },
+    "nacionalidade": {
+      "type": "string"
+    },
+    "telefone": {
+      "type": "biginteger"
+    },
+    "naturalidade": {
+      "type": "string"
+    },
+    "ctps": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "problemaDeSaude": {
+      "type": "boolean"
+    },
+    "situacaoDeRua": {
+      "type": "boolean"
+    },
+    "descricaoSaude": {
+      "type": "text"
+    },
+    "portadorDeficiencia": {
+      "type": "boolean"
+    },
+    "descricaoDeficiencia": {
+      "type": "text"
+    },
+    "servicosDeReferencia": {
+      "type": "text"
+    },
+    "grauEscolar": {
+      "type": "enumeration",
+      "enum": [
+        "Primário",
+        "Fundamental incompleto",
+        "Fundamental completo",
+        "Médio incompleto",
+        "Médio completo",
+        "Superior incompleto",
+        "Superior completo"
+      ]
+    },
+    "aperfeicoamentoHabilidades": {
+      "type": "text"
+    },
+    "observacoes": {
+      "type": "text"
+    },
+    "ocupacao": {
+      "type": "enumeration",
+      "enum": [
+        "Desempregado",
+        "Informal",
+        "Empregado",
+        "Empresário ou Autônomo",
+        "Carteira Assinada",
+        "Aposentado",
+        "Outros (Detalhar abaixo)"
+      ]
+    },
+    "detalheOcupacao": {
+      "type": "text"
     }
   }
 }
