@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "initiatives",
+  "info": {
+    "singularName": "initiative",
+    "pluralName": "initiatives",
+    "displayName": "initiative "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "initiativeName": {
+      "type": "string",
+      "required": true
+    },
+    "initiativeDescription": {
+      "type": "richtext"
+    },
+    "initiativeAdress": {
+      "type": "string"
+    }
+  }
+}

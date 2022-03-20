@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "atendimentos",
+  "info": {
+    "singularName": "atendimento",
+    "pluralName": "atendimentos",
+    "displayName": "atendimento"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "initiative": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::initiative.initiative"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pessoa.pessoa"
+    },
+    "extraInfo": {
+      "type": "richtext"
+    },
+    "attendanceDate": {
+      "type": "date"
+    }
+  }
+}
