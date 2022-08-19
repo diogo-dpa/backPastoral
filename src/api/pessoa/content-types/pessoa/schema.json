@@ -12,125 +12,98 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nome": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "dataNascimento": {
-      "type": "date"
+    "birthDate": {
+      "type": "datetime"
+    },
+    "mothersName": {
+      "type": "string"
+    },
+    "civilSituation": {
+      "type": "enumeration",
+      "enum": ["solteiro", "casado", "viuvo", "divorciado", "uniao-estavel"]
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": ["masculino", "feminino"],
+      "required": true
+    },
+    "genderCategory": {
+      "type": "enumeration",
+      "enum": ["cisgenero", "transgenero"]
+    },
+    "race": {
+      "type": "enumeration",
+      "enum": [
+        "branco",
+        "preto",
+        "pardo",
+        "indigeno",
+        "amarelo",
+        "nao-declarar"
+      ]
+    },
+    "chldrenQuantity": {
+      "type": "integer"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "birthCity": {
+      "type": "string"
+    },
+    "hasHealthProblem": {
+      "type": "boolean"
+    },
+    "isCareSituation": {
+      "type": "boolean"
+    },
+    "heathDescription": {
+      "type": "text"
+    },
+    "isDisabledPerson": {
+      "type": "boolean"
+    },
+    "disabledDescription": {
+      "type": "text"
+    },
+    "referenceServices": {
+      "type": "text"
+    },
+    "skills": {
+      "type": "text"
+    },
+    "observations": {
+      "type": "text"
+    },
+    "ocupationDetails": {
+      "type": "text"
     },
     "cpf": {
-      "type": "biginteger",
+      "type": "string",
+      "required": true,
       "unique": true
     },
     "rg": {
-      "type": "biginteger"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
-    "nomeMae": {
-      "type": "string"
-    },
-    "situacaoCivil": {
-      "type": "enumeration",
-      "enum": [
-        "Solteiro",
-        "Casado",
-        "Viúvo",
-        "Divorciado",
-        "União Estável"
-      ]
-    },
-    "genero": {
-      "type": "enumeration",
-      "enum": [
-        "Masculino",
-        "Feminino"
-      ]
-    },
-    "categoriaGenero": {
-      "type": "enumeration",
-      "enum": [
-        "Cisgênero",
-        "Transgênero"
-      ]
-    },
-    "racaCor": {
-      "type": "enumeration",
-      "enum": [
-        "Branca",
-        "Preta",
-        "Parda",
-        "Indígena",
-        "Amarela - Asiática",
-        "Prefiro não declarar"
-      ]
-    },
-    "quantidadeFilhos": {
-      "type": "integer"
-    },
-    "nacionalidade": {
-      "type": "string"
-    },
-    "telefone": {
-      "type": "biginteger"
-    },
-    "naturalidade": {
+    "telephone": {
       "type": "string"
     },
     "ctps": {
-      "type": "biginteger",
-      "unique": true
+      "type": "string"
     },
-    "problemaDeSaude": {
-      "type": "boolean"
+    "schoolLevel": {
+      "type": "string"
     },
-    "situacaoDeRua": {
-      "type": "boolean"
-    },
-    "descricaoSaude": {
-      "type": "text"
-    },
-    "portadorDeficiencia": {
-      "type": "boolean"
-    },
-    "descricaoDeficiencia": {
-      "type": "text"
-    },
-    "servicosDeReferencia": {
-      "type": "text"
-    },
-    "grauEscolar": {
-      "type": "enumeration",
-      "enum": [
-        "Primário",
-        "Fundamental incompleto",
-        "Fundamental completo",
-        "Médio incompleto",
-        "Médio completo",
-        "Superior incompleto",
-        "Superior completo"
-      ]
-    },
-    "aperfeicoamentoHabilidades": {
-      "type": "text"
-    },
-    "observacoes": {
-      "type": "text"
-    },
-    "ocupacao": {
-      "type": "enumeration",
-      "enum": [
-        "Desempregado",
-        "Informal",
-        "Empregado",
-        "Empresário ou Autônomo",
-        "Carteira Assinada",
-        "Aposentado",
-        "Outros (Detalhar abaixo)"
-      ]
-    },
-    "detalheOcupacao": {
-      "type": "text"
+    "ocupation": {
+      "type": "string"
     }
   }
 }
